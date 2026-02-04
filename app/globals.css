@@ -11,9 +11,14 @@
 
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
+  --color-primary-hover: var(--primary-hover);
 
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
+
+  /* Tertiary */
+  --color-tertiary: var(--tertiary);
+  --color-tertiary-foreground: var(--tertiary-foreground);
 
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
@@ -43,19 +48,36 @@
   /* Base radius */
   --radius: 0.625rem;
 
-    /* Primary button colors */
-  --primary: oklch(0.75 0.12 300);           /* default bg */
-  --primary-foreground: oklch(0.98 0 270);   /* text color */
-  --primary-hover: oklch(0.72 0.12 300);     /* hover bg */
-  --primary-active: oklch(0.68 0.12 300);    /* active/click bg */
+  /* Primary - Light Purple (blue-marguerite) */
+  --primary-50: #f4f3ff;
+  --primary-100: #ebe9fe;
+  --primary-200: #d9d6fe;
+  --primary-300: #bdb5fd;
+  --primary-400: #9c8cf9;
+  /* main */
+  --primary-500: #7b5bf5;
+  /* hover */
+  --primary-600: #6b3bec;
+  /* active */
+  --primary-700: #5c29d8;
+  --primary-800: #4d22b5;
+  --primary-900: #411e94;
+  --primary-950: #261065;
+
+  --primary: var(--primary-500);
+  --primary-foreground: #ffffff;
+  --primary-hover: var(--primary-900);
+  --primary-active: var(--primary-800);
 
   /* Background / Foreground */
   --background: oklch(0.98 0.01 270);
   --foreground: oklch(0.12 0.01 270);
 
-  /* Primary: Light Purple */
-  --primary: oklch(0.75 0.12 300);
-  --primary-foreground: oklch(0.98 0 270);
+
+
+  /* Tertiary: Teal (Placeholder) */
+  --tertiary: #14b8a6;
+  --tertiary-foreground: #ffffff;
 
   /* Secondary: Soft Blue */
   --secondary: oklch(0.75 0.08 220);
@@ -102,11 +124,13 @@
   --background: oklch(0.12 0.01 270);
   --foreground: oklch(0.98 0 270);
 
-  --primary: oklch(0.55 0.12 300);
-  --primary-foreground: oklch(0.98 0 270);
+
 
   --secondary: oklch(0.55 0.08 220);
   --secondary-foreground: oklch(0.98 0 220);
+
+  --tertiary: #0f766e;
+  --tertiary-foreground: #ffffff;
 
   --accent: oklch(0.55 0.15 180);
   --accent-foreground: oklch(0.98 0 180);
@@ -136,6 +160,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }

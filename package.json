@@ -45,7 +45,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/waqiyuddev/meta-react-advanced-final-project/issues"
   },
