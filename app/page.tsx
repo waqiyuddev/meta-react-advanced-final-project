@@ -37,6 +37,11 @@ export default function Home() {
           </p>
 
           <div className="flex flex-wrap gap-2">
+
+            <Button variant="primary">Light Purple</Button>
+            <div className="bg-primary text-primary-foreground p-4 rounded">
+              Light Purple Box
+            </div>
             <Button>Click me</Button>
             <Button variant="default">Default</Button>
             <Button variant="secondary">Secondary</Button>

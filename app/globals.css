@@ -43,6 +43,12 @@
   /* Base radius */
   --radius: 0.625rem;
 
+    /* Primary button colors */
+  --primary: oklch(0.75 0.12 300);           /* default bg */
+  --primary-foreground: oklch(0.98 0 270);   /* text color */
+  --primary-hover: oklch(0.72 0.12 300);     /* hover bg */
+  --primary-active: oklch(0.68 0.12 300);    /* active/click bg */
+
   /* Background / Foreground */
   --background: oklch(0.98 0.01 270);
   --foreground: oklch(0.12 0.01 270);
@@ -87,6 +93,12 @@
 
 /* Dark Mode */
 .dark {
+
+  --primary: oklch(0.55 0.12 300);
+  --primary-foreground: oklch(0.98 0 270);
+  --primary-hover: oklch(0.50 0.12 300);
+  --primary-active: oklch(0.45 0.12 300);
+
   --background: oklch(0.12 0.01 270);
   --foreground: oklch(0.98 0 270);
 
