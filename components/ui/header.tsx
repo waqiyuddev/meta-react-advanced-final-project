@@ -60,6 +60,21 @@ export default function Header() {
                 {/* RIGHT — INTERNAL LINKS */}
                 <nav className="flex gap-[12px] items-center">
                     <a
+                        href="#landing"
+                        onClick={(e) => handleScroll(e, "landing")}
+                    >
+                        <Button
+                            variant="secondary"
+                            className="
+                bg-secondary
+                text-secondary-foreground
+                hover:bg-secondary/90
+              "
+                        >
+                            Home
+                        </Button>
+                    </a>
+                    <a
                         href="#projects"
                         onClick={(e) => handleScroll(e, "projects")}
                     >

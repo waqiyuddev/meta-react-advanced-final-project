@@ -3,6 +3,7 @@ import Image from "next/image"
 export default function LandingSection() {
     return (
         <section
+            id="landing"
             className="
         flex
         items-center
