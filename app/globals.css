@@ -156,6 +156,43 @@
   --chart-5: oklch(0.7 0.22 60);
 }
 
+/* Dim Mode */
+.dim {
+  /* Primary */
+  --primary: oklch(0.65 0.1 280);
+  --primary-foreground: oklch(0.12 0.01 270);
+  --primary-hover: oklch(0.6 0.1 280);
+  --primary-active: oklch(0.55 0.1 280);
+
+  /* Background / Foreground */
+  --background: oklch(0.92 0.01 270);
+  --foreground: oklch(0.18 0.01 270);
+
+  /* Secondary */
+  --secondary: oklch(0.7 0.07 220);
+  --secondary-foreground: oklch(0.15 0.01 220);
+
+  /* Accent */
+  --accent: oklch(0.7 0.12 180);
+  --accent-foreground: oklch(0.12 0.01 180);
+
+  /* Muted */
+  --muted: oklch(0.88 0.01 0);
+  --muted-foreground: oklch(0.35 0.01 0);
+
+  /* Borders / Inputs */
+  --border: oklch(0.8 0.01 0);
+  --input: oklch(0.85 0.01 0);
+  --ring: oklch(0.6 0.01 0);
+
+  /* Cards / Popover */
+  --card: oklch(0.94 0.01 0);
+  --card-foreground: oklch(0.18 0.01 0);
+  --popover: oklch(0.94 0.01 0);
+  --popover-foreground: oklch(0.18 0.01 0);
+}
+
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
