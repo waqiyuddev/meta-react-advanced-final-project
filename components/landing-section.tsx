@@ -24,7 +24,7 @@ export default function LandingSection() {
             >
                 {/* Avatar */}
                 <Image
-                    src="https://i.pravatar.cc/150?img=7"
+                    src="https://i.pravatar.cc/150?img=2"
                     alt="Avatar"
                     width={120}
                     height={120}
@@ -32,8 +32,8 @@ export default function LandingSection() {
                 />
 
                 {/* Greeting */}
-                <p className="text-[14px] text-muted-foreground">
-                    Hi, I’m
+                <p className="text-[18px] text-muted-foreground">
+                    Hi, this is for my final project certificate
                 </p>
 
                 {/* Name / Title */}
