@@ -1,18 +1,11 @@
 "use client"
 
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import ThemeToggle from "@/components/ui/theme-toggle"
 
 const socials = [
-    {
-        name: "GitHub",
-        href: "https://github.com",
-    },
-    {
-        name: "LinkedIn",
-        href: "https://linkedin.com",
-    },
+    { name: "GitHub", href: "https://github.com" },
+    { name: "LinkedIn", href: "https://linkedin.com" },
 ]
 
 export default function Header() {
@@ -34,7 +27,8 @@ export default function Header() {
         right-0
         z-50
         border-b
-        bg-background
+        bg-primary
+        text-primary-foreground
       "
         >
             <div
@@ -64,19 +58,37 @@ export default function Header() {
                 </div>
 
                 {/* RIGHT — INTERNAL LINKS */}
-                <nav className="flex gap-[12px]">
+                <nav className="flex gap-[12px] items-center">
                     <a
                         href="#projects"
                         onClick={(e) => handleScroll(e, "projects")}
                     >
-                        <Button variant="ghost">Projects</Button>
+                        <Button
+                            variant="secondary"
+                            className="
+                bg-secondary
+                text-secondary-foreground
+                hover:bg-secondary/90
+              "
+                        >
+                            Projects
+                        </Button>
                     </a>
 
                     <a
                         href="#contact"
                         onClick={(e) => handleScroll(e, "contact")}
                     >
-                        <Button variant="ghost">Contact</Button>
+                        <Button
+                            variant="secondary"
+                            className="
+                bg-secondary
+                text-secondary-foreground
+                hover:bg-secondary/90
+              "
+                        >
+                            Contact
+                        </Button>
                     </a>
 
                     <ThemeToggle />
