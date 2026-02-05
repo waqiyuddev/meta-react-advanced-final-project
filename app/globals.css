@@ -69,6 +69,22 @@
   --primary-hover: var(--primary-900);
   --primary-active: var(--primary-800);
 
+  /* Secondary - Portica Yellow */
+  --secondary-50: #fdfce9;
+  --secondary-100: #fbfac6;
+  --secondary-200: #f8f190;
+  --secondary-300: #f5e45b;
+  --secondary-400: #efcf20;
+  /* main */
+  --secondary-500: #dfb713;
+  /* hover */
+  --secondary-600: #c1900d;
+  /* active */
+  --secondary-700: #9a680e;
+  --secondary-800: #7f5214;
+  --secondary-900: #6c4317;
+  --secondary-950: #3f2309;
+
   /* Background / Foreground */
   --background: #fafafa;
   --foreground: #1a1a1a;
@@ -77,9 +93,11 @@
   --tertiary: #14b8a6;
   --tertiary-foreground: #ffffff;
 
-  /* Secondary: Soft Blue */
-  --secondary: #93b4e8;
-  --secondary-foreground: #0a0a0f;
+  /* Secondary */
+  --secondary: var(--secondary-500);
+  --secondary-foreground: #1a1a1a;
+  --secondary-hover: var(--secondary-700);
+  --secondary-active: var(--secondary-800);
 
   /* Accent: Teal */
   --accent: #5dd4c0;
@@ -122,8 +140,10 @@
   --background: #1a1a1a;
   --foreground: #fafafa;
 
-  --secondary: #60a5fa;
-  --secondary-foreground: #fafafa;
+  --secondary: #dfb713;
+  --secondary-foreground: #1a1a1a;
+  --secondary-hover: #9a680e;
+  --secondary-active: #7f5214;
 
   --tertiary: #0f766e;
   --tertiary-foreground: #ffffff;
@@ -164,9 +184,11 @@
   --background: #222f3c;
   --foreground: #f0f0f0;
 
-  /* Secondary - Slightly lighter blue-gray */
-  --secondary: #2d3f52;
-  --secondary-foreground: #e0e0e0;
+  /* Secondary - Portica Yellow for Dim */
+  --secondary: #dfb713;
+  --secondary-foreground: #1a1a1a;
+  --secondary-hover: #9a680e;
+  --secondary-active: #7f5214;
 
   /* Tertiary */
   --tertiary: #3d5a80;
