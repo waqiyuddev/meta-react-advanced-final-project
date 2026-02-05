@@ -3,14 +3,15 @@ import { notFound } from "next/navigation"
 import Image from "next/image"
 
 type Props = {
-    params: {
+    params: Promise<{
         slug: string
-    }
+    }>
 }
 
-export default function ProjectDetailPage({ params }: Props) {
+export default async function ProjectDetailPage({ params }: Props) {
+    const { slug } = await params
     const project = projects.find(
-        (p) => p.slug === params.slug
+        (p) => p.slug === slug
     )
 
     if (!project) return notFound()

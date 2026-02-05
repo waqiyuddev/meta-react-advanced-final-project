@@ -38,7 +38,7 @@ export default function LandingSection() {
 
                 {/* Name / Title */}
                 <h1 className="text-[32px] font-bold">
-                    META REACT NEXT.JS
+                    META REACT ADVANCED FINAL PROJECT
                 </h1>
 
                 {/* Bio */}
