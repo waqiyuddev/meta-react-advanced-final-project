@@ -1,6 +1,8 @@
 import { projects } from "@/lib/projects"
 import { notFound } from "next/navigation"
 import Image from "next/image"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 type Props = {
     params: Promise<{
@@ -19,6 +21,11 @@ export default async function ProjectDetailPage({ params }: Props) {
     return (
         <div className="px-[24px] py-[80px]">
             <div className="max-w-[800px] mx-auto flex flex-col gap-[24px]">
+                {/* Back Button */}
+                <Button asChild variant="secondary" className="w-auto self-start">
+                    <Link href="/">← Home</Link>
+                </Button>
+
                 <Image
                     src={project.image}
                     alt={project.title}
