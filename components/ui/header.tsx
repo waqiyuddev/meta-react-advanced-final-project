@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import ThemeToggle from "@/components/ui/theme-toggle"
+import { usePathname } from "next/navigation"
 
 const socials = [
     { name: "GitHub", href: "https://github.com" },
@@ -9,6 +10,8 @@ const socials = [
 ]
 
 export default function Header() {
+    const pathname = usePathname()
+    const isProjectDetail = pathname?.startsWith("/projects/")
     function handleScroll(
         e: React.MouseEvent<HTMLAnchorElement>,
         id: string
@@ -59,52 +62,56 @@ export default function Header() {
 
                 {/* RIGHT — INTERNAL LINKS */}
                 <nav className="flex gap-[12px] items-center">
-                    <a
-                        href="#landing"
-                        onClick={(e) => handleScroll(e, "landing")}
-                    >
-                        <Button
-                            variant="secondary"
-                            className="
+                    {!isProjectDetail && (
+                        <>
+                            <a
+                                href="#landing"
+                                onClick={(e) => handleScroll(e, "landing")}
+                            >
+                                <Button
+                                    variant="secondary"
+                                    className="
                 bg-secondary
                 text-secondary-foreground
                 hover:bg-secondary/90
               "
-                        >
-                            Home
-                        </Button>
-                    </a>
-                    <a
-                        href="#projects"
-                        onClick={(e) => handleScroll(e, "projects")}
-                    >
-                        <Button
-                            variant="secondary"
-                            className="
+                                >
+                                    Home
+                                </Button>
+                            </a>
+                            <a
+                                href="#projects"
+                                onClick={(e) => handleScroll(e, "projects")}
+                            >
+                                <Button
+                                    variant="secondary"
+                                    className="
                 bg-secondary
                 text-secondary-foreground
                 hover:bg-secondary/90
               "
-                        >
-                            Projects
-                        </Button>
-                    </a>
+                                >
+                                    Projects
+                                </Button>
+                            </a>
 
-                    <a
-                        href="#contact"
-                        onClick={(e) => handleScroll(e, "contact")}
-                    >
-                        <Button
-                            variant="secondary"
-                            className="
+                            <a
+                                href="#contact"
+                                onClick={(e) => handleScroll(e, "contact")}
+                            >
+                                <Button
+                                    variant="secondary"
+                                    className="
                 bg-secondary
                 text-secondary-foreground
                 hover:bg-secondary/90
               "
-                        >
-                            Contact
-                        </Button>
-                    </a>
+                                >
+                                    Contact
+                                </Button>
+                            </a>
+                        </>
+                    )}
 
                     <ThemeToggle />
                 </nav>
